@@ -15,3 +15,13 @@ establishments.update_many(
         }
     ]
 )
+
+
+result = establishments.aggregate([
+    {
+        "$project": {
+            "longitude_type": { "$type": "$geocode.longitude" },
+            "latitude_type": { "$type": "$geocode.latitude" }
+        }
+    }
+])
