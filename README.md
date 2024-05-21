@@ -1,8 +1,7 @@
 # nosql-challenge
 
-recieved help from chatGPT to make the following: 
+recieved help from chatGPT with the  following code: 
 
-# Change the data type from String to Decimal for longitude and latitude
 
 establishments.update_many(
     {},
